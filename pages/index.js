@@ -3,20 +3,22 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import Login from "../components/Login";
+import Sidebar from "../components/Sidebar";
 
 export default function Home({ session }) {
   return !session ? (
     <Login />
   ) : (
-    <div>
+    <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
         <title>Facebook clone</title>
       </Head>
       <Header />
 
       {/* HEADER */}
-      <main>
+      <main className="flex">
         {/* sidebar */}
+        <Sidebar />
         {/* newsfeed */}
         {/* widgets */}
       </main>

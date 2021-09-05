@@ -58,7 +58,9 @@ function Header() {
           layout="fixed"
           className="cursor-pointer"
         />
-        <p className="whitespace-no-wrap pr-3 font-semibold">SHISUKE URAHARA</p>
+        <p className="whitespace-no-wrap pr-3 font-semibold">
+          {session.user.name}
+        </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />
