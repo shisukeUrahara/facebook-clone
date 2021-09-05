@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 
 export default function Home({ session }) {
   return !session ? (
@@ -16,10 +17,11 @@ export default function Home({ session }) {
       <Header />
 
       {/* HEADER */}
-      <main className="flex">
+      <main className="flex ">
         {/* sidebar */}
         <Sidebar />
         {/* newsfeed */}
+        <Feed />
         {/* widgets */}
       </main>
     </div>
