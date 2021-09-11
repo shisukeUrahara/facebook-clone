@@ -29,8 +29,13 @@ const stories = [
 function Stories() {
   return (
     <div className="flex justify-center space-x-3 mx-auto">
-      {stories.map((story) => (
-        <StoryCard name={story.name} src={story.src} profile={story.profile} />
+      {stories.map((story, i) => (
+        <StoryCard
+          name={story.name}
+          src={story.src}
+          profile={story.profile}
+          key={i}
+        />
       ))}
     </div>
   );
